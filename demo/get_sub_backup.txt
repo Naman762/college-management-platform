@@ -1,0 +1,47 @@
+<?php
+require_once "../connection/connection.php";
+
+if (isset($_GET['roll_no'], $_GET['course_code'], $_GET['semester'])) {
+    $roll_no = $_GET['roll_no'];
+    $course_code = $_GET['course_code'];
+    $semester = $_GET['semester'];
+
+    // Check if result already uploaded
+    $check = mysqli_query($con, "SELECT * FROM student_results WHERE roll_no='$roll_no' AND semester='$semester'");
+    if (mysqli_num_rows($check) > 0) {
+        echo "<tr><td colspan='4' class='text-center text-success fw-bold p-3'>
+                Result for <b>$roll_no</b> (Semester <b>$semester</b>) already uploaded.
+              </td></tr>";
+        exit;
+    }
+
+    // Otherwise fetch subjects
+    $query = mysqli_query($con, "
+        SELECT subject_code, subject_name 
+        FROM course_subjects 
+        WHERE course_code='$course_code' AND semester='$semester'
+    ");
+
+    if (mysqli_num_rows($query) > 0) {
+        $i = 1;
+        while ($row = mysqli_fetch_assoc($query)) {
+            echo "
+                <tr>
+                    <td>
+                        <input type='hidden' name='subject_code[]' value='{$row['subject_code']}'>
+                        {$row['subject_code']}
+                    </td>
+                    <td>{$row['subject_name']}</td>
+                    <td><input type='number' name='internal_marks[]' class='form-control form-control-sm' min='0' max='50' required></td>
+                    <td><input type='number' name='external_marks[]' class='form-control form-control-sm' min='0' max='50' required></td>
+                </tr>
+            ";
+            $i++;
+        }
+    } else {
+        echo "<tr><td colspan='4' class='text-center text-muted'>No subjects found for this semester.</td></tr>";
+    }
+} else {
+    echo "<tr><td colspan='4' class='text-center text-muted'>Invalid request.</td></tr>";
+}
+?>

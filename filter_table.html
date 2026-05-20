@@ -1,0 +1,724 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+#myInput {
+  background-image: url('/css/searchicon.png');
+  background-position: 10px 10px;
+  background-repeat: no-repeat;
+  width: 100%;
+  font-size: 16px;
+  padding: 12px 20px 12px 40px;
+  border: 1px solid #ddd;
+  margin-bottom: 12px;
+}
+
+#mylist {
+  
+  background-position: 10px 10px;
+  background-repeat: no-repeat;
+  width: 100%;
+  height:20%;
+  font-size: 16px;
+  padding: 12px 20px 12px 40px;
+  border: 2px solid #000;
+  margin-bottom: 1px;
+}
+
+#myTable {
+  border-collapse: collapse;
+  width: 100%;
+  
+  border: 1px solid #ddd;
+  font-size: 18px;
+  background-color: white;
+}
+
+#myTable th, #myTable td {
+  text-align: left;
+  padding: 12px;
+}
+
+#myTable tr {
+  border-bottom: 1px solid #ddd;
+}
+
+#myTable tr.header, #myTable tr:hover {
+  background-color: #f1f1f1;
+}
+.hidet
+{
+	display:none;
+}
+.linked{
+	text-decoration:none;
+	color:black;
+}
+</style>
+</head>
+<body>
+
+<select id="mylist" onchange="myFunction()" class='form-control'>
+<option>--Select Course--</option>
+<option>BCA 1st</option>
+<option>BCA 2nd</option>
+<option>BCA 3rd</option>
+<option>BSc 1st</option>
+<option>BSc 2nd</option>
+<option>BSc 3rd</option>
+</select>
+<table id="myTable">
+  <tr class="header">
+    <th style="width:60%;" class="hidet">Name</th>
+   <th style="width:60%;background-color:#8D0A24;color:white;text-align:center;">Course</th>
+    
+   <th style="width:40%;background-color:#8D0A24;color:white;text-align:center;">Year</th>
+  </tr>
+  
+  <!--BCA 1st 2020-->
+<tr>
+    <td class="hidet">BCA 1st</td>
+    <td><a href="http://www.acps.ac.in/wp-content/uploads/2020/05/IT2020.pdf" class="linked">BCA 101 Introduction To Information Technology and PC Packages</a></td>
+    <td>2020</td>
+  </tr>
+<!-- BCA1st 2019-->
+	 
+	  <tr>
+    <td class="hidet">BCA 1st</td>
+    <td><a href="http://www.acps.ac.in/wp-content/uploads/2020/05/IT-2019.pdf" class="linked">BCA 101 Introduction To Information Technology and PC Packages</a></td>
+    <td>2019</td>
+  </tr>
+<tr>
+    <td class="hidet">BCA 1st</td>
+    <td><a href="http://www.acps.ac.in/wp-content/uploads/2020/05/BC2019.pdf" class="linked">BCA 102 Business Communication</a></td>
+    <td>2019</td>
+  </tr>
+  <tr>
+    <td class="hidet">BCA 1st</td>
+    <td><a href="http://www.acps.ac.in/wp-content/uploads/2020/05/c-prog-2019.pdf" class="linked">BCA 103 Problem solving with C</a></td>
+    <td>2019</td>
+  </tr>
+  <tr>
+    <td class="hidet">BCA 1st</td>
+    <td><a href="http://www.acps.ac.in/wp-content/uploads/2020/05/physics-2019.pdf" class="linked">BCA 104 Basic Physics</a></td>
+    <td>2019</td>
+  </tr>
+  <tr>
+    <td class="hidet">BCA 1st</td>
+    <td ><a href="http://www.acps.ac.in/wp-content/uploads/2020/05/bsic-maths2019.pdf" class="linked">BCA 105 Basic Maths</a></td>
+    <td>2019</td>
+  </tr>
+  <tr>
+    <td class="hidet">BCA 1st</td>
+    <td ><a href="http://www.acps.ac.in/wp-content/uploads/2020/05/CO-2019.pdf" class="linked">BCA 106 Computer Organization</a></td>
+    <td>2019</td>
+  </tr>
+  <!--2018-->
+  
+  <tr>
+    <td class="hidet">BCA 1st</td>
+    <td><a href="http://www.acps.ac.in/wp-content/uploads/2020/05/it-2018.pdf" target="_blank" class="linked">BCA 101 Information Technology IT</a></td>
+    <td>2018</td>
+  </tr>
+<tr>
+    <td class="hidet">BCA 1st</td>
+    <td><a href="http://www.acps.ac.in/wp-content/uploads/2020/05/BC2018.pdf" target="_blank" class="linked">BCA 102 Business communication</a></td>
+    <td>2018</td>
+  </tr>
+  <tr>
+    <td class="hidet">BCA 1st</td>
+    <td><a href="http://www.acps.ac.in/wp-content/uploads/2020/05/c-2018.pdf" target="_blank" class="linked">BCA 103 Problem solving with C</a></td>
+    <td>2018</td>
+  </tr>
+  <tr>
+    <td class="hidet">BCA 1st</td>
+    <td ><a href="http://www.acps.ac.in/wp-content/uploads/2020/05/physics2018.pdf" target="_blank" class="linked">BCA 104 Basic Physics</a></td>
+    <td>2018</td>
+  </tr>
+  <tr>
+    <td class="hidet">BCA 1st</td>
+    <td ><a href="http://www.acps.ac.in/wp-content/uploads/2020/05/maths-2018.pdf" target="_blank" class="linked">BCA 105 Basic Maths</a></td>
+    <td>2018</td>
+  </tr>
+  <tr>
+    <td class="hidet">BCA 1st</td>
+    <td ><a href="http://www.acps.ac.in/wp-content/uploads/2020/05/CO2018.pdf" target="_blank" class="linked">BCA 106 Computer Organization</a></td>
+    <td>2018</td>
+  </tr>
+  
+ <!--BCA 2nd yr paper2018-->
+  <!--2019-->
+  <tr>
+    <td class="hidet">BCA 2nd</td>
+    <td><a href="http://www.acps.ac.in/wp-content/uploads/2020/05/CCN2019.pdf" target="_blank" class="linked">BCA 201 Computer Communication and Networking</a></td>
+    <td>2019</td>
+  </tr>
+<tr>
+    <td class="hidet">BCA 2nd</td>
+    <td><a href="http://www.acps.ac.in/wp-content/uploads/2020/05/dbms2019.pdf" class="linked" target="_blank">BCA 202 Database Management System</a></td>
+    <td>2019</td>
+  </tr>
+  <tr>
+    <td class="hidet">BCA 2nd</td>
+    <td><a href="http://www.acps.ac.in/wp-content/uploads/2020/05/os2019.pdf" target="_blank" class="linked">BCA 203 Fundamental of OS</a></td>
+    <td>2019</td>
+  </tr>
+  <tr>
+    <td class="hidet">BCA 2nd</td>
+    <td ><a href="#" target="_blank" class="linked">BCA 204 Data Structure using C</a></td>
+    <td>2019</td>
+  </tr>
+  <tr>
+    <td class="hidet">BCA 2nd</td>
+    <td ><a href="http://www.acps.ac.in/wp-content/uploads/2020/05/sad2019.pdf" target="_blank" class="linked">BCA 205 System Analysis and Design</a></td>
+    <td>2019</td>
+  </tr>
+  <tr>
+    <td class="hidet">BCA 2nd</td>
+    <td ><a href="http://www.acps.ac.in/wp-content/uploads/2020/05/C2019.pdf" target="_blank" class="linked">BCA 206 Object Oriented Programming using C++</a></td>
+    <td>2019</td>
+  </tr>
+  
+  <!--2018-->
+  <tr>
+    <td class="hidet">BCA 2nd</td>
+    <td><a href="http://www.acps.ac.in/wp-content/uploads/2020/05/CCN-2018.pdf" target="_blank" class="linked">BCA 201 Computer Communication and Networking</a></td>
+    <td>2018</td>
+  </tr>
+<tr>
+    <td class="hidet">BCA 2nd</td>
+    <td><a href="http://www.acps.ac.in/wp-content/uploads/2020/05/dbms2018.pdf" target="_blank" class="linked">BCA 202 Database Management System</a></td>
+    <td>2018</td>
+  </tr>
+  <tr>
+    <td class="hidet">BCA 2nd</td>
+    <td><a href="http://www.acps.ac.in/wp-content/uploads/2020/05/os2018.pdf" target="_blank" class="linked">BCA 203 Fundamental of OS</a></td>
+    <td>2018</td>
+  </tr>
+  <tr>
+    <td class="hidet">BCA 2nd</td>
+    <td ><a href="http://www.acps.ac.in/wp-content/uploads/2020/05/DS2018.pdf" target="_blank"class="linked">BCA 204 Data Structure using C</a></td>
+    <td>2018</td>
+  </tr>
+  <tr>
+    <td class="hidet">BCA 2nd</td>
+    <td ><a href="http://www.acps.ac.in/wp-content/uploads/2020/05/SAD-2018.pdf" target="_blank" class="linked">BCA 205 System Analysis and Design</a></td>
+    <td>2018</td>
+  </tr>
+  <tr>
+    <td class="hidet">BCA 2nd</td>
+    <td ><a href="http://www.acps.ac.in/wp-content/uploads/2020/05/c-2018-1.pdf" target="_blank" class="linked">BCA 206 Object Oriented Programming using C++</a></td>
+    <td>2018</td>
+  </tr>
+  
+<!--BCA3rd paper-->
+ <tr>
+    <td class="hidet">BCA 3rd</td>
+    <td><a href="http://www.acps.ac.in/wp-content/uploads/2020/05/C2019.pdf" target="_blank" class="linked">BCA 301 Object Oriented Programming C++</a></td>
+    <td>2019</td>
+  </tr>
+<tr>
+    <td class="hidet">BCA 3rd</td>
+    <td><a href="#" target="_blank" class="linked">BCA 302 Visual Programming</a></td>
+    <td>2019</td>
+  </tr>
+  <tr>
+    <td class="hidet">BCA 3rd</td>
+    <td><a href="http://www.acps.ac.in/wp-content/uploads/2020/05/crypto2019.pdf" target="_blank" class="linked">BCA 303 Information & Security Cryptography</a></td>
+    <td>2019</td>
+  </tr>
+  <tr>
+    <td class="hidet">BCA 3rd</td>
+    <td ><a href="http://www.acps.ac.in/wp-content/uploads/2020/05/sad2019.pdf" class="linked">BCA 304 System Analysis and Design</a></td>
+    <td>2019</td>
+  </tr>
+  <tr>
+    <td class="hidet">BCA 3rd</td>
+    <td ><a href="http://www.acps.ac.in/wp-content/uploads/2020/05/web2019.pdf" target="_blank" class="linked">BCA 305 Web Technologies</a></td>
+    <td>2019</td>
+  </tr>
+  
+<!--2018-->
+  <tr>
+    <td class="hidet">BCA 3rd</td>
+    <td><a href="http://www.acps.ac.in/wp-content/uploads/2020/05/c-2018-1.pdf" class="linked">BCA 301 Object Oriented Programming using C++</a></td>
+    <td>2018</td>
+  </tr>
+	<tr>
+    <td class="hidet">BCA 3rd</td>
+    <td><a href="http://www.acps.ac.in/wp-content/uploads/2020/05/vc-2018.pdf" target="_blank" class="linked">BCA 302 Visual Programming</a></td>
+    <td>2018</td>
+  </tr>
+  <tr>
+    <td class="hidet">BCA 3rd</td>
+    <td><a href="http://www.acps.ac.in/wp-content/uploads/2020/05/crypto2019.pdf" target="_blank" class="linked">BCA 303 Information & Security Cryptography</a></td>
+    <td>2018</td>
+  </tr>
+  <tr>
+    <td class="hidet">BCA 3rd</td>
+    <td ><a href="http://www.acps.ac.in/wp-content/uploads/2020/05/SAD-2018.pdf" target="_blank" class="linked">BCA 304 System Analysis and Design</a></td>
+    <td>2018</td>
+  </tr>
+  <tr>
+    <td class="hidet">BCA 3rd</td>
+    <td ><a href="http://www.acps.ac.in/wp-content/uploads/2020/05/web-2018.pdf" target="_blank" class="linked">BCA 305 Web Technologies</a></td>
+    <td>2018</td>
+  </tr>
+  
+  <!--***************************************************-->
+  
+ <!--BSc-->
+ <tr>
+    <td class="hidet">BSc 1st</td>
+    <td><a href="http://www.acps.ac.in/wp-content/uploads/2020/05/botany-1-2018.pdf" class="linked">1021 Botany paper-I</a></td>
+    <td>2018</td>
+  </tr>
+  <tr>
+    <td class="hidet">BSc 1st</td>
+    <td><a href="http://www.acps.ac.in/wp-content/uploads/2020/05/botany-2-2018.pdf" class="linked">1022 Botany paper-II</a></td>
+    <td>2018</td>
+  </tr>
+  <tr>
+    <td class="hidet">BSc 1st</td>
+    <td><a href="http://www.acps.ac.in/wp-content/uploads/2020/05/botany-3-2018.pdf" class="linked">1023 Botany paper-III</a></td>
+    <td>2018</td>
+  </tr>
+<tr>
+    <td class="hidet">BSc 1st</td>
+    <td><a href="http://www.acps.ac.in/wp-content/uploads/2020/05/chemistry-1-2018.pdf" class="linked">1041 Chemistry paper-I</a></td>
+    <td>2018</td>
+  </tr>
+<tr>
+    <td class="hidet">BSc 1st</td>
+    <td><a href="http://www.acps.ac.in/wp-content/uploads/2020/05/chemistry-2-2018.pdf" class="linked">1042 Chemistry paper-II</a></td>
+    <td>2018</td>
+  </tr>
+  <tr>
+    <td class="hidet">BSc 1st</td>
+    <td><a href="http://www.acps.ac.in/wp-content/uploads/2020/05/chemistry-3-2018.pdf" class="linked">1043 Chemistry paper-III</a></td>
+    <td>2018</td>
+  </tr>
+  
+  <tr>
+    <td class="hidet">BSc 1st</td>
+    <td><a href="http://www.acps.ac.in/wp-content/uploads/2020/05/computer-1-2018.pdf" class="linked">1061 Computer Science Paper-I</a></td>
+    <td>2018</td>
+  </tr>
+  <tr>
+    <td class="hidet">BSc 1st</td>
+    <td><a href="http://www.acps.ac.in/wp-content/uploads/2020/05/computer-2-2018.pdf" class="linked">1062 Computer Science Paper-II</a></td>
+    <td>2018</td>
+  </tr>
+  <tr>
+    <td class="hidet">BSc 1st</td>
+    <td><a href="http://www.acps.ac.in/wp-content/uploads/2020/05/computer-3-2018.pdf" class="linked">1063 Computer Science Paper-III</a></td>
+    <td>2018</td>
+  </tr>
+  
+  <tr>
+    <td class="hidet">BSc 1st</td>
+    <td ><a href="http://www.acps.ac.in/wp-content/uploads/2020/05/EVS-1-2018.pdf" class="linked">1081 Environment Studies paper-I</a></td>
+    <td>2018</td>
+  </tr>
+ <tr>
+    <td class="hidet">BSc 1st</td>
+    <td ><a href="http://www.acps.ac.in/wp-content/uploads/2020/05/EVS-2-2018.pdf" class="linked">1082 Environment Studies paper-II</a></td>
+    <td>2018</td>
+  </tr>
+ <tr>
+    <td class="hidet">BSc 1st</td>
+    <td ><a href="http://www.acps.ac.in/wp-content/uploads/2020/05/EVS-3-2018.pdf" class="linked">1083 Environment Studies paper-III</a></td>
+    <td>2018</td>
+  </tr>
+  
+ <tr>
+    <td class="hidet">BSc 1st</td>
+    <td ><a href="http://www.acps.ac.in/wp-content/uploads/2020/05/geology-1-2018.pdf" class="linked">1121 Geology paper-I</a></td>
+    <td>2018</td>
+  </tr>
+ <tr>
+    <td class="hidet">BSc 1st</td>
+    <td ><a href="http://www.acps.ac.in/wp-content/uploads/2020/05/geology-2-2018.pdf" class="linked">1122 Geology paper-II</a></td>
+    <td>2018</td>
+  </tr>
+<tr>
+    <td class="hidet">BSc 1st</td>
+    <td ><a href="http://www.acps.ac.in/wp-content/uploads/2020/05/geology-3-2018.pdf" class="linked">1123 Geology paper-III</a></td>
+    <td>2018</td>
+  </tr>  
+
+<tr>
+    <td class="hidet">BSc 1st</td>
+    <td ><a href="http://www.acps.ac.in/wp-content/uploads/2020/05/maths-1-2018.pdf" class="linked">1141 Mathematics paper-I</a></td>
+    <td>2018</td>
+  </tr>
+<tr>
+    <td class="hidet">BSc 1st</td>
+    <td ><a href="http://www.acps.ac.in/wp-content/uploads/2020/05/maths-2-2018.pdf" class="linked">1142 Mathematics paper-II</a></td>
+    <td>2018</td>
+  </tr>    
+<tr>
+    <td class="hidet">BSc 1st</td>
+    <td ><a href="http://www.acps.ac.in/wp-content/uploads/2020/05/maths-3-2018.pdf" class="linked">1143 Mathematics paper-III</a></td>
+    <td>2018</td>
+  </tr>      
+
+<tr>
+    <td class="hidet">BSc 1st</td>
+    <td ><a href="http://www.acps.ac.in/wp-content/uploads/2020/05/physics-1-2018.pdf" class="linked">1161 Physics paper-I</a></td>
+    <td>2018</td>
+  </tr>       
+<tr>
+    <td class="hidet">BSc 1st</td>
+    <td ><a href="http://www.acps.ac.in/wp-content/uploads/2020/05/physics-2-2018.pdf" class="linked">1162 Physics paper-II</a></td>
+    <td>2018</td>
+  </tr>       
+  <tr>
+    <td class="hidet">BSc 1st</td>
+    <td ><a href="http://www.acps.ac.in/wp-content/uploads/2020/05/physics-3-2018.pdf" class="linked">1163 Physics paper-III</a></td>
+    <td>2018</td>
+  </tr>       
+  
+   <tr>
+    <td class="hidet">BSc 1st</td>
+    <td ><a href="http://www.acps.ac.in/wp-content/uploads/2020/05/statistics-2018.pdf" class="linked">1181 Statistics paper-I</a></td>
+    <td>2018</td>
+  </tr>    
+  <tr>
+    <td class="hidet">BSc 1st</td>
+    <td ><a href="http://www.acps.ac.in/wp-content/uploads/2020/05/statitics-2-2018.pdf" class="linked">1182 Statistics paper-II</a></td>
+    <td>2018</td>
+  </tr>    
+  <tr>
+    <td class="hidet">BSc 1st</td>
+    <td ><a href="http://www.acps.ac.in/wp-content/uploads/2020/05/statistics-3-2018.pdf" class="linked">1183 Statistics paper-III</a></td>
+    <td>2018</td>
+  </tr>    
+  
+  <tr>
+    <td class="hidet">BSc 1st</td>
+    <td ><a href="http://www.acps.ac.in/wp-content/uploads/2020/05/zoology-1-2018.pdf" class="linked">1201 Zoology paper-I</a></td>
+    <td>2018</td>
+  </tr>    
+    <tr>
+    <td class="hidet">BSc 1st</td>
+    <td ><a href="http://www.acps.ac.in/wp-content/uploads/2020/05/zoology-2-2018.pdf" class="linked">1202 Zoology paper-II</a></td>
+    <td>2018</td>
+  </tr>    
+    <tr>
+    <td class="hidet">BSc 1st</td>
+    <td ><a href="http://www.acps.ac.in/wp-content/uploads/2020/05/zoology-3-2018.pdf" class="linked">1203 Zoology paper-III</a></td>
+    <td>2018</td>
+  </tr>    
+   <!--BSc 2ndyr-->
+ <tr>
+    <td class="hidet">BSc 2nd</td>
+    <td><a href="http://www.acps.ac.in/wp-content/uploads/2020/05/botany-2nd-p1-2018.pdf" class="linked">2021 Botany paper-I</a></td>
+    <td>2018</td>
+  </tr>
+  <tr>
+    <td class="hidet">BSc 2nd</td>
+    <td><a href="http://www.acps.ac.in/wp-content/uploads/2020/05/botany-2nd-p2-2018.pdf" class="linked">2022 Botany paper-II</a></td>
+    <td>2018</td>
+  </tr>
+  <tr>
+    <td class="hidet">BSc 2nd</td>
+    <td><a href="http://www.acps.ac.in/wp-content/uploads/2020/05/botany-2nd-p3-2018.pdf" class="linked">2023 Botany paper-III</a></td>
+    <td>2018</td>
+  </tr>
+<tr>
+    <td class="hidet">BSc 2nd</td>
+    <td><a href="http://www.acps.ac.in/wp-content/uploads/2020/05/chemistry-2nd-p1-2018.pdf" class="linked">2041 Chemistry paper-I</a></td>
+    <td>2018</td>
+  </tr>
+<tr>
+    <td class="hidet">BSc 2nd</td>
+    <td><a href="http://www.acps.ac.in/wp-content/uploads/2020/05/chemistry-2nd-p2-2018.pdf" class="linked">2042 Chemistry paper-II</a></td>
+    <td>2018</td>
+  </tr>
+  <tr>
+    <td class="hidet">BSc 2nd</td>
+    <td><a href="http://www.acps.ac.in/wp-content/uploads/2020/05/chemistry-2nd-p3-2018.pdf" class="linked">2043 Chemistry paper-III</a></td>
+    <td>2018</td>
+  </tr>
+  <tr>
+    <td class="hidet">BSc 2nd</td>
+    <td><a href="http://www.acps.ac.in/wp-content/uploads/2020/05/data-structure-2nd-2018.pdf" class="linked">2061 Data Structure Using C</a></td>
+    <td>2018</td>
+  </tr>
+  <tr>
+    <td class="hidet">BSc 2nd</td>
+    <td><a href="http://www.acps.ac.in/wp-content/uploads/2020/05/dbms-2nd-2018.pdf" class="linked">2062 Database Management System </a></td>
+    <td>2018</td>
+  </tr>
+  <tr>
+    <td class="hidet">BSc 2nd</td>
+    <td><a href="http://www.acps.ac.in/wp-content/uploads/2020/05/computer-science-2nd-2018.pdf" class="linked">2063 Computer Science</a></td>
+    <td>2018</td>
+  </tr>
+  <tr>
+    <td class="hidet">BSc 2nd</td>
+    <td><a href="http://www.acps.ac.in/wp-content/uploads/2020/05/ecological-factor-2nd-2018.pdf" class="linked">2081 Ecological Factors, Adaption & Distributions</a></td>
+    <td>2018</td>
+  </tr>
+  <tr>
+    <td class="hidet">BSc 2nd</td>
+    <td><a href="http://www.acps.ac.in/wp-content/uploads/2020/05/acoustic-ecology-2nd-2018.pdf" class="linked">2082 Aquatic Ecology</a></td>
+    <td>2018</td>
+  </tr>
+  <tr>
+    <td class="hidet">BSc 2nd</td>
+    <td><a href="http://www.acps.ac.in/wp-content/uploads/2020/05/petorology-2nd-2018.pdf" class="linked">2121 Petorology-I</a></td>
+    <td>2018</td>
+  </tr>
+  <tr>
+    <td class="hidet">BSc 2nd</td>
+    <td><a href="http://www.acps.ac.in/wp-content/uploads/2020/05/strategraphy-2nd-2018.pdf" class="linked">2123 Strategraphy</a></td>
+    <td>2018</td>
+  </tr>
+    <tr>
+    <td class="hidet">BSc 2nd</td>
+    <td><a href="http://www.acps.ac.in/wp-content/uploads/2020/05/mathematics-2nd-p1-2018.pdf" class="linked">2141 (Mathematisc)Mechnics-I</a></td>
+    <td>2018</td>
+  </tr>
+    <tr>
+    <td class="hidet">BSc 2nd</td>
+    <td><a href="http://www.acps.ac.in/wp-content/uploads/2020/05/mathematics-2nd-p2-2018.pdf" class="linked">2142 (Mathematisc)Mechnics-II</a></td>
+    <td>2018</td>
+  </tr>
+    <tr>
+    <td class="hidet">BSc 2nd</td>
+    <td><a href="http://www.acps.ac.in/wp-content/uploads/2020/05/mathematics-2nd-p3-2018.pdf" class="linked">2143 (Mathematisc)Mechnics-III</a></td>
+    <td>2018</td>
+  </tr>
+  <tr>
+    <td class="hidet">BSc 2nd</td>
+    <td><a href="http://www.acps.ac.in/wp-content/uploads/2020/05/kinetic-thermodinamic-2nd-2018.pdf" class="linked">2161 Kinetics Theory, Thermodynamics & Statistical</a></td>
+    <td>2018</td>
+  </tr>
+  <tr>
+    <td class="hidet">BSc 2nd</td>
+    <td><a href="http://www.acps.ac.in/wp-content/uploads/2020/05/optics-2nd-2018.pdf" class="linked">2162 Optics</a></td>
+    <td>2018</td>
+  </tr>
+  <tr>
+    <td class="hidet">BSc 2nd</td>
+    <td><a href="http://www.acps.ac.in/wp-content/uploads/2020/05/electronic-2nd-2018.pdf" class="linked">2163 Electronics</a></td>
+    <td>2018</td>
+  </tr>
+	<tr>
+    <td class="hidet">BSc 2nd</td>
+    <td><a href="http://www.acps.ac.in/wp-content/uploads/2020/05/probability-distribution-2nd-p1-2018.pdf" class="linked">2181 Probability Distribution</a></td>
+    <td>2018</td>
+  </tr>
+<tr>
+    <td class="hidet">BSc 2nd</td>
+    <td><a href="http://www.acps.ac.in/wp-content/uploads/2020/05/probability-distribution-2nd-p2-2018.pdf" class="linked">2182 Probability Distribution-II</a></td>
+    <td>2018</td>
+  </tr>
+<tr>
+    <td class="hidet">BSc 2nd</td>
+    <td><a href="http://www.acps.ac.in/wp-content/uploads/2020/05/applied-statistic-2nd-p3-2018.pdf" class="linked">2183 Applied Statistics-III</a></td>
+    <td>2018</td>
+  </tr>
+  <tr>
+    <td class="hidet">BSc 2nd</td>
+    <td><a href="http://www.acps.ac.in/wp-content/uploads/2020/05/life-and-diversity-2nd-p1-2018.pdf" class="linked">2201 Life & Diversity of Animal-II ( Vertebrate)</a></td>
+    <td>2018</td>
+  </tr>
+  <tr>
+    <td class="hidet">BSc 2nd</td>
+    <td><a href="http://www.acps.ac.in/wp-content/uploads/2020/05/genetic-and-biotechnology-2018.pdf" class="linked">2202 Genetics & Biotechnology</a></td>
+    <td>2018</td>
+  </tr>
+  <tr>
+    <td class="hidet">BSc 2nd</td>
+    <td><a href="http://www.acps.ac.in/wp-content/uploads/2020/05/applied-zoology-and-microbiology-2018.pdf" class="linked">2203 Applied Zoology & Microbiology</a></td>
+    <td>2018</td>
+  </tr>
+  
+  
+  
+ <!--BSc 3rd yr --> 
+ 
+ 
+	<tr>
+    <td class="hidet">BSc 3rd</td>
+    <td><a href="http://www.acps.ac.in/wp-content/uploads/2020/05/3rd-yr-bootany-p1.pdf" class="linked">3021 Botany paper-I</a></td>
+    <td>2018</td>
+  </tr>
+  <tr>
+    <td class="hidet">BSc 3rd</td>
+    <td><a href="http://www.acps.ac.in/wp-content/uploads/2020/05/3rd-yr-bootany-p.pdf" class="linked">3022 Botany paper-II</a></td>
+    <td>2018</td>
+  </tr>
+  <tr>
+    <td class="hidet">BSc 3rd</td>
+    <td><a href="http://www.acps.ac.in/wp-content/uploads/2020/05/3rd-yr-bootany-p3.pdf" class="linked">3023 Botany paper-III</a></td>
+    <td>2018</td>
+  </tr>
+<tr>
+    <td class="hidet">BSc 3rd</td>
+    <td><a href="http://www.acps.ac.in/wp-content/uploads/2020/05/3rd-yr-chemistry-p1.pdf" class="linked">3041 Chemistry paper-I</a></td>
+    <td>2018</td>
+  </tr>
+<tr>
+    <td class="hidet">BSc 3rd</td>
+    <td><a href="http://www.acps.ac.in/wp-content/uploads/2020/05/3rd-yr-chemistry-p2.pdf" class="linked">3042 Chemistry paper-II</a></td>
+    <td>2018</td>
+  </tr>
+  <tr>
+    <td class="hidet">BSc 3rd</td>
+    <td><a href="http://www.acps.ac.in/wp-content/uploads/2020/05/3rd-yr-chemistry-p3.pdf" class="linked">3043 Chemistry paper-III</a></td>
+    <td>2018</td>
+  </tr>
+	<tr>
+    <td class="hidet">BSc 3rd</td>
+    <td><a href="http://www.acps.ac.in/wp-content/uploads/2020/05/3rd-yr-computer-p1.pdf" class="linked">3061 Computer Science Paper-I</a></td>
+    <td>2018</td>
+  </tr>
+  <tr>
+    <td class="hidet">BSc 3rd</td>
+    <td><a href="http://www.acps.ac.in/wp-content/uploads/2020/05/3rd-yr-computer-p2.pdf" class="linked">3062 Computer Science Paper-II</a></td>
+    <td>2018</td>
+  </tr>
+  <tr>
+    <td class="hidet">BSc 3rd</td>
+    <td><a href="http://www.acps.ac.in/wp-content/uploads/2020/05/3rd-yr-computer-p3.pdf" class="linked">3063 Computer Science Paper-III</a></td>
+    <td>2018</td>
+  </tr>
+  
+  <tr>
+    <td class="hidet">BSc 3rd</td>
+    <td ><a href="http://www.acps.ac.in/wp-content/uploads/2020/05/3rd-yr-EVS-p1.pdf" class="linked">3081 Environment Studies paper-I</a></td>
+    <td>2018</td>
+  </tr>
+ <tr>
+    <td class="hidet">BSc 3rd</td>
+    <td ><a href="http://www.acps.ac.in/wp-content/uploads/2020/05/3rd-yr-EVS-p2.pdf" class="linked">3082 Environment Studies paper-II</a></td>
+    <td>2018</td>
+  </tr>
+ <tr>
+    <td class="hidet">BSc 3rd</td>
+    <td ><a href="http://www.acps.ac.in/wp-content/uploads/2020/05/3rd-yr-EVS-p3.pdf" class="linked">3083 Environment Studies paper-III</a></td>
+    <td>2018</td>
+  </tr>
+  
+ <tr>
+    <td class="hidet">BSc 3rd</td>
+    <td ><a href="http://www.acps.ac.in/wp-content/uploads/2020/05/3rd-yr-geology-p1.pdf" class="linked">3121 Geology paper-I</a></td>
+    <td>2018</td>
+  </tr>
+ <tr>
+    <td class="hidet">BSc 3rd</td>
+    <td ><a href="http://www.acps.ac.in/wp-content/uploads/2020/05/3rd-yr-geology-p2.pdf" class="linked">3122 Geology paper-II</a></td>
+    <td>2018</td>
+  </tr>
+<tr>
+    <td class="hidet">BSc 3rd</td>
+    <td ><a href="http://www.acps.ac.in/wp-content/uploads/2020/05/3rd-yr-geology-p3.pdf" class="linked">3123 Geology paper-III</a></td>
+    <td>2018</td>
+  </tr>  
+<tr>
+    <td class="hidet">BSc 3rd</td>
+    <td ><a href="http://www.acps.ac.in/wp-content/uploads/2020/05/3rd-yr-mathe-p1.pdf" class="linked">3141 Mathematics paper-I</a></td>
+    <td>2018</td>
+  </tr>
+<tr>
+    <td class="hidet">BSc 3rd</td>
+    <td ><a href="http://www.acps.ac.in/wp-content/uploads/2020/05/3rd-yr-mathe-p2.pdf" class="linked">3142 Mathematics paper-II</a></td>
+    <td>2018</td>
+  </tr>    
+<tr>
+    <td class="hidet">BSc 3rd</td>
+    <td ><a href="http://www.acps.ac.in/wp-content/uploads/2020/05/3rd-yr-mathe-p3.pdf" class="linked">3143A Mathematics paper-III-A</a></td>
+    <td>2018</td>
+  </tr> 
+<tr>
+    <td class="hidet">BSc 3rd</td>
+    <td ><a href="http://www.acps.ac.in/wp-content/uploads/2020/05/3rd-yr-mathe-p3B.pdf" class="linked">3143B Mathematics paper-III-B</a></td>
+    <td>2018</td>
+  </tr>      
+<tr>
+    <td class="hidet">BSc 3rd</td>
+    <td ><a href="http://www.acps.ac.in/wp-content/uploads/2020/05/3rd-yr-mathe-p3C.pdf" class="linked">3143C Mathematics paper-III-C</a></td>
+    <td>2018</td>
+  </tr>        
+
+<tr>
+    <td class="hidet">BSc 3rd</td>
+    <td ><a href="http://www.acps.ac.in/wp-content/uploads/2020/05/3rd-yr-physics-p1.pdf" class="linked">3161 Physics paper-I</a></td>
+    <td>2018</td>
+  </tr>       
+<tr>
+    <td class="hidet">BSc 3rd</td>
+    <td ><a href="http://www.acps.ac.in/wp-content/uploads/2020/05/3rd-yr-physics-p2.pdf" class="linked">3162 Physics paper-II</a></td>
+    <td>2018</td>
+  </tr>       
+  <tr>
+    <td class="hidet">BSc 3rd</td>
+    <td ><a href="http://www.acps.ac.in/wp-content/uploads/2020/05/3rd-yr-physics-p3.pdf" class="linked">3163 Physics paper-III</a></td>
+    <td>2018</td>
+  </tr>
+<tr>
+    <td class="hidet">BSc 3rd</td>
+    <td ><a href="http://www.acps.ac.in/wp-content/uploads/2020/05/3rd-yr-statitics-p1.pdf" class="linked">3181 Statistics paper-I</a></td>
+    <td>2018</td>
+  </tr>    
+  <tr>
+    <td class="hidet">BSc 3rd</td>
+    <td ><a href="http://www.acps.ac.in/wp-content/uploads/2020/05/3rd-yr-statitics-p2.pdf" class="linked">3182 Statistics paper-II</a></td>
+    <td>2018</td>
+  </tr>    
+  <tr>
+    <td class="hidet">BSc 3rd</td>
+    <td ><a href="http://www.acps.ac.in/wp-content/uploads/2020/05/3rd-yr-statitics-p3.pdf" class="linked">3183 Statistics paper-III</a></td>
+    <td>2018</td>
+  </tr>    
+  
+  <tr>
+    <td class="hidet">BSc 3rd</td>
+    <td ><a href="http://www.acps.ac.in/wp-content/uploads/2020/05/3rd-yr-zoology-p1.pdf" class="linked">3201 Zoology paper-I</a></td>
+    <td>2018</td>
+  </tr>    
+    <tr>
+    <td class="hidet">BSc 3rd</td>
+    <td ><a href="http://www.acps.ac.in/wp-content/uploads/2020/05/3rd-yr-zoology-p2.pdf" class="linked">3202 Zoology paper-II</a></td>
+    <td>2018</td>
+  </tr>    
+    <tr>
+    <td class="hidet">BSc 3rd</td>
+    <td ><a href="http://www.acps.ac.in/wp-content/uploads/2020/05/3rd-yr-zoology-p3.pdf" class="linked">3203 Zoology paper-III</a></td>
+    <td>2018</td>
+  </tr>    	
+	
+</table>
+
+<script>
+function myFunction() {
+  var input, filter, table, tr, td, i;
+  input = document.getElementById("mylist");
+  filter = input.value.toUpperCase();
+  table = document.getElementById("myTable");
+  tr = table.getElementsByTagName("tr");
+  for (i = 0; i < tr.length; i++) {
+    td = tr[i].getElementsByTagName("td")[0];
+    if (td) {
+      if (td.innerHTML.toUpperCase().indexOf(filter) > -1) {
+        tr[i].style.display = "";
+      } else {
+        tr[i].style.display = "none";
+      }
+    }       
+  }
+}
+</script>
+
+</body>
+</html>
+ 
